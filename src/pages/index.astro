@@ -6,15 +6,19 @@ import Badge from '../components/Badge.astro';
 import LinkedInIcon from '../components/icons/LinkedIn.astro';
 import GitHubIcon from '../components/icons/GitHub.astro';
 import MailIcon from '../components/icons/Mail.astro';
+import Briefcase from '../components/icons/Briefcasaes.astro';
 import SocialPill from '../components/SocialPill.astro';
-
+import ExperienceItem from '../components/ExperienceItem.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Briefcasaes from '../components/icons/Briefcasaes.astro';
 ---
 
 <Layout title="Portfolio de German - Desarrollador y Programador Web"
 	description='Desarrollador Web'
 >
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-44">
+		<SectionContainer class="py-44 pb-24">
 			<img
 			class="rounded-full size-12 mb-5"
 			src="https://media.licdn.com/dms/image/D5635AQHYxRKIQ0846A/profile-framedphoto-shrink_200_200/0/1686857385409?e=1705554000&v=beta&t=yg2Hl6rGkZUjuSVphLUq5iEQeMLVp1kLH-aOar4cRHY" 
@@ -41,6 +45,13 @@ import SocialPill from '../components/SocialPill.astro';
 					Gerll.bm@hotmail.com
 				</SocialPill>
 			</nav>
-		</section>
+		</SectionContainer>
+		<SectionContainer>
+			<h2 class="text-2xl font-semi-bold mb-6 flex gap-x-3 items-center">
+				<Briefcasaes class="size-7"/>
+				Experiencia laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
 	</main>
 </Layout>
