@@ -3,13 +3,20 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Header from '../components/Header.astro';
 import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import MailIcon from '../components/icons/Mail.astro';
+import SocialPill from '../components/SocialPill.astro';
+
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Portfolio de German - Desarrollador y Programador Web"
+	description='Desarrollador Web'
+>
 	<main>
 		<section class="w-full mx-auto lg:w-[740px] py-44">
 			<img
-			class="rounded-full w-12 h-12 mb-5"
+			class="rounded-full size-12 mb-5"
 			src="https://media.licdn.com/dms/image/D5635AQHYxRKIQ0846A/profile-framedphoto-shrink_200_200/0/1686857385409?e=1705554000&v=beta&t=yg2Hl6rGkZUjuSVphLUq5iEQeMLVp1kLH-aOar4cRHY" 
 			alt="ger photo" 
 			/>
@@ -20,6 +27,20 @@ import Badge from '../components/Badge.astro';
 			<h2 class="text-xl opacity-80">
 				Desarrollador web y Soporte de sistemas. De Tijuana, B.C. México
 			</h2>
+			<nav class="flex gap-x-4 mt-8">
+				<SocialPill href="https://www.linkedin.com/in/german-leyva-luque-8a1493165/">
+					<LinkedInIcon class="size-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/Gerll">
+					<GitHubIcon class="size-6" />
+					GitHub
+				</SocialPill>
+				<SocialPill>
+					<MailIcon class="size-6" />
+					Gerll.bm@hotmail.com
+				</SocialPill>
+			</nav>
 		</section>
 	</main>
 </Layout>
