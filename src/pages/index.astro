@@ -12,13 +12,15 @@ import ExperienceItem from '../components/ExperienceItem.astro';
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Briefcasaes from '../components/icons/Briefcasaes.astro';
+import CodeIcon from '../components/icons/Code.astro';
+import Projects from '../components/Projects.astro';
 ---
 
 <Layout title="Portfolio de German - Desarrollador y Programador Web"
 	description='Desarrollador Web'
 >
 	<main class="px-4">
-		<SectionContainer class="py-44 pb-24">
+		<SectionContainer class="py-44 pb-32">
 			<img
 			class="rounded-full size-12 mb-5"
 			src="https://media.licdn.com/dms/image/D5635AQHYxRKIQ0846A/profile-framedphoto-shrink_200_200/0/1686857385409?e=1705554000&v=beta&t=yg2Hl6rGkZUjuSVphLUq5iEQeMLVp1kLH-aOar4cRHY" 
@@ -47,11 +49,18 @@ import Briefcasaes from '../components/icons/Briefcasaes.astro';
 			</nav>
 		</SectionContainer>
 		<SectionContainer id="experiencia">
-			<h2 class="text-2xl font-semi-bold mb-6 flex gap-x-3 items-center">
+			<h2 class="text-3xl font-semi-bold mb-6 flex gap-x-3 items-center">
 				<Briefcasaes class="size-7"/>
 				Experiencia laboral
 			</h2>
 			<Experience />
+		</SectionContainer>
+		<SectionContainer id="experiencia">
+			<h2 class="text-2xl font-semi-bold mb-6 flex gap-x-3 items-center">
+				<CodeIcon class="size-7"/>
+				Projects
+			</h2>
+			<Projects />
 		</SectionContainer>
 	</main>
 </Layout>
